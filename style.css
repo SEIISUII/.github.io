@@ -1,4 +1,11 @@
 h1
 {
-    color: rgb(255, 214, 214)
+    color: rgb(252, 177, 177)
 }
+
+a:link{ text-decoration: none; color: rgb(252, 177, 177); }
+    a:visited { text-decoration: none; color : rgb(252, 177, 177); }
+    a:hover { text-decoration: none; color : rgb(252, 177, 177); }
+    a:focus { text-decoration: none; color : rgb(252, 177, 177); }
+    a:hover, a:active { text-decoration: none; color : rgb(252, 177, 177); }
+
