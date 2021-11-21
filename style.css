@@ -13,3 +13,7 @@ a:link
     a:hover, a:active { text-decoration: none; color : rgb(255, 217, 217); }
 }
 
+hr
+{
+    color: rgb(163, 160, 160);
+}
