@@ -4,30 +4,176 @@
         <meta char = "utp-8">
         <title>Spell Your Memory</title>
         
-        <!--아이콘-->
-        <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/favicon.ico/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/favicon.ico/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/favicon.ico/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/favicon.ico/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicon.ico/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/favicon.ico/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/favicon.ico/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/favicon.ico/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon.ico/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico/favicon-16x16.png">
-        <link rel="manifest" href="/favicon.ico/manifest.json">
+        <!--파비콘-->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="favicon.ico/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/favicon.ico/ms-icon-144x144.png">
+        <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+        <!--글꼴-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
         
-        <link rel="stylesheet" href="/style.css" >
-        <script src="/js.js"></script>
+        <!--css-->
+        <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" href="slider.css" >
+        <link rel="stylesheet" href="gallery.css" >
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+        <!--스크립트-->
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="js.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+
     </head>
-    <body>
-        <h1><a href="https://seiisuii.github.io">Spell Your Memory</a></h1>
-        <hr>  
+    <body style="margin: 0">
+
+    
+    <div id="wrap">
+
+        <!--헤더/메뉴-->
+        <div class="container">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        
+            <div class="sidebar">
+                <ul>
+                    
+                    <li><a href="2000S.html" id="category">2000S</a></li>
+                    <li><a href="2010S.html" id="category">2010S</a></li>
+                    <li><a href="Visitlog.html" id="category">Visitlog</a></li>
+                    <li><a href="QnA.html" id="category">QnA</a></li>
+                </ul>
+            </div>
+
+        <!--제목-->
+            <div class="title">
+                <h1 id="home"><a href="spellyourmemory.html" id="mainlink">Spell Your Memory</a></h1>
+            </div>
+    
+     
+        <!--검색창-->
+        <div class="searchbox">
+        <form>
+            <input name="search" type="text" placeholder="기억 찾기...">
+            <button type="submit"></button>
+       </form>
+       </div>
+        </div>
+
+   
+
+    <!--콘텐츠-->
+    <div style="overflow: hidden; display:flex;">
+      
+        <!--무한 슬라이더-->
+        <div class="your_class">
+           
+            <div class="inner">
+               <a href="spellyourmemory.html"><img src="image/image.png"></a>
+            </div>
+
+           <div class="inner">
+            <a href="spellyourmemory.html"><img src="image/image2.png"></a>
+           </div>
+
+           <div class="inner">
+            <a href="spellyourmemory.html"><img src="image/image3.png"></a>
+           </div>  
+        </div>
+        
+        <script>
+
+            $('.your_class').slick({
+            
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: true,
+            
+            });
+            
+        </script>
+
+        <h1 class="welcome">Welcome</h1>
+        <button class="notice" onclick="location.href='spellyourmemory.html'">click</button>
+
+        <div class="gallery-box" style="position: absolute;">
+            <div class="gallery">
+                    <ul>
+                        <li>
+                            <div class="thmb">
+                                <a href="#">
+                                    <img src="image/image.png" alt="">
+                                </a>
+                            </div>
+                            <a href="#"><strong>ㅆrㅇi월드...☆★</strong></a>
+                            <p class="tx-brief">2021-xx-xx</p>
+                        </li>
+                        <li>
+                            <div class="thmb">
+                                <a href="#">
+                                <img src="image/image2.png" alt="">
+                                </a>
+                            </div>
+                            <a href="#"><strong>ㅇL얼들의 성지 ㅎr두ㄹi...☆★</strong></a>
+                            <p class="tx-brief">2021-xx-xx</p>
+                        </li>
+                        <li>
+                            <div class="thmb">
+                                <a href="#">
+                                    <img src="image/image3.png" alt="">
+                                </a>
+                            </div>
+                            <a href="#"><strong>ㅆrㅇi월드...☆★</strong></a>
+                            <p class="tx-brief">2021-xx-xx</p>
+                        </li>
+                        <li>
+                            <div class="thmb">
+                                <a href="#">
+                                    <img src="image/image4.png" alt="">
+                                </a>
+                            </div>
+                            <a href="#"><strong>프ㄹi쿠ㄹr...☆★</strong></a>
+                            <p class="tx-brief">2021-xx-xx</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!--footer-->
+    <footer>
+   <div class="footer">
+        <p>Copylight ⓒ Jeongheewon All rights Reserved.</p>
+         <p>웹디자인및기획 최종 과제</p>
+    </div>
+    </footer>
+
+</div>
     </body>
 </html>
