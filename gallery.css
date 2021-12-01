@@ -1,0 +1,33 @@
+/*타이틀 영역*/
+.gallery-box
+{
+    
+    
+    left: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.gallery-box li
+{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: 400px;
+}
+
+.gallery-box li.last
+{
+    margin-right: 20px;
+}
+
+.gallery img
+{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+

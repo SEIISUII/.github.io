@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "PF스타더스트S+Bold";
+    src: url(font/PF스타더스트S+Bold.ttf);
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.container
+{   
+    
+    display : flex;
+}
+
+.title
+{
+    margin: 0 auto;   
+    text-align: center;
+}
+
+#home
+{
+    font-family: 'Montagu Slab', serif;
+    color: #fedee9;
+}
+
+#category
+{
+    text-decoration: none; color: rgb(166,166,166); }
+    a:visited { text-decoration: none; color : rgb(166,166,166); }
+    a:hover { text-decoration: none; color : rgb(166,166,166); }
+    a:focus { text-decoration: none; color : rgb(166,166,166); }
+    a:hover, a:active { text-decoration: none; color : rgb(166,166,166);
+}
+
+#mainlink
+{ 
+    text-decoration: none; color: #fedee9; }
+    a:visited { text-decoration: none; color : #fedee9; }
+    a:hover { text-decoration: none; color : #fedee9; }
+    a:focus { text-decoration: none; color : #fedee9; }
+    a:hover, a:active { text-decoration: none; color : #fedee9;
+}
+
+#menuicon
+{
+    display:none;
+    float:left;
+}
+
+#menuicon + label
+{
+    display:block;
+    margin:30px;
+    width:25px;
+    height:25px;
+    position:relative;
+    cursor:pointer;
+}
+
+#menuicon + label span 
+{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:5px;
+    border-radius: 20px;
+    background: rgb(166,166,166);
+    transition:all .35s;
+}
+
+#menuicon + label span:nth-child(1)
+{
+    top:0;
+}
+
+#menuicon + label span:nth-child(2)
+{
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#menuicon + label span:nth-child(3)
+{
+    bottom:0;
+}
+
+#menuicon:checked + label
+{
+    z-index:3;
+}
+
+#menuicon:checked + label span
+{
+    background:#fff;
+}
+
+#menuicon:checked + label span:nth-child(1)
+{
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+
+#menuicon:checked + label span:nth-child(2)
+{
+    opacity:0;
+}
+
+#menuicon:checked + label span:nth-child(3)
+{
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+
+
+#menuicon:checked + label + div
+{
+    left:0;
+}
+
+.sidebar
+{
+    width:300px;
+    height:100%;
+    background:#ccecff;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index: 2;
+    transition:all .35s;
+}
+
+ul
+{
+    list-style: circle;
+    position: fixed;
+    float: left;
+    top: 60px;
+    font-family: "PF스타더스트S+Bold";
+    color: rgb(166,166,166);
+    line-height : 50px;
+    font-size: 20px;
+}
+
+.searchbox
+{
+    display:block;
+    margin:25px;
+    width: 25px;
+    height: 25px;
+    
+}
+
+form
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+  
+input
+{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 0px;
+    padding: 0px 50px 0px 0px;
+    z-index: 3;
+    
+    background: none;
+    opacity: 0;
+    
+    font-family: "PF스타더스트S+Bold";
+    font-size: 20px;
+    color: rgb(166,166,166);
+    
+    border: none;
+    outline: none;
+    
+    cursor: pointer;
+    transition: 1.5s cubic-bezier(0, 1, 0, 1);
+}
+  
+  input::-webkit-input-placeholder {
+      color: rgb(166,166,166);
+  } input::-moz-placeholder {
+      color: rgb(166,166,166);
+  } input::placeholder {
+      color: rgb(166,166,166);
+  }
+  
+input:focus 
+{
+    width: 100px;
+    opacity: 1;
+    z-index: 1;
+    border-bottom: 2px solid rgb(166,166,166);
+    cursor: text;
+}
+  
+button
+{   
+    height: 55px;
+    width: 55px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    
+    outline: none;
+    border: none;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;
+    background-size: 80%;
+    opacity: .4;
+    cursor: pointer;
+  }
+
+  .footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 0px;
+    color: rgb(166,166,166);
+    background: #ccecff;
+    font-family: "PF스타더스트S+Bold";
+}
+
+
